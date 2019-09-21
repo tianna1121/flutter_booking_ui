@@ -14,6 +14,7 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Container(
           color: Colors.white,
+          height: double.infinity,
           child: Column(
             children: <Widget>[
               Row(

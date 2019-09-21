@@ -21,7 +21,12 @@ class ImageCard extends StatelessWidget {
       padding: EdgeInsets.all(4.0),
       child: InkWell(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (_) => Details()));
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (_) => Details(
+                        place: place,
+                      )));
         },
         child: Container(
           decoration: BoxDecoration(

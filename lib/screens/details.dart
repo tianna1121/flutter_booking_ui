@@ -20,7 +20,7 @@ class _DetailsState extends State<Details> {
             children: <Widget>[
               Container(
                 width: double.infinity,
-                height: 300.0,
+                height: 400.0,
                 child: ClipRRect(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(30.0),
@@ -41,10 +41,10 @@ class _DetailsState extends State<Details> {
                     Icon(
                       Icons.calendar_today,
                       color: Colors.grey,
-                      size: 20.0,
+                      size: 40.0,
                     ),
                     SizedBox(
-                      width: 5.0,
+                      width: 10.0,
                     ),
                     Text(
                       '${widget.place.days} days',
@@ -55,7 +55,7 @@ class _DetailsState extends State<Details> {
               ),
               Expanded(
                 child: Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(16.0),
                   child: RichText(
                     text: TextSpan(
                       children: [
@@ -63,7 +63,7 @@ class _DetailsState extends State<Details> {
                           text: '${widget.place.place} \n',
                           style: TextStyle(
                               fontSize: 22,
-                              fontWeight: FontWeight.w300,
+                              fontWeight: FontWeight.w500,
                               color: Colors.black),
                         ),
                         TextSpan(
@@ -71,7 +71,7 @@ class _DetailsState extends State<Details> {
                               'Ipsum is simply dymmy text of the printing and typesettings.',
                           style: TextStyle(
                               fontSize: 18,
-                              fontWeight: FontWeight.w500,
+                              fontWeight: FontWeight.w300,
                               color: Colors.black),
                         ),
                       ],
@@ -82,7 +82,7 @@ class _DetailsState extends State<Details> {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
-                  height: 80.0,
+                  height: 90.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30.0),
@@ -140,11 +140,14 @@ class _DetailsState extends State<Details> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 30.0,
+              )
             ],
           ),
           Positioned(
-            top: 20.0,
-            left: 10.0,
+            top: 35.0,
+            left: 15.0,
             child: GestureDetector(
               onTap: () {
                 Navigator.pop(context);
