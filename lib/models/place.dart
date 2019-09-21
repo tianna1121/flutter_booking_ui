@@ -1,7 +1,7 @@
 class Place {
-  final String name;
-  final String image;
-  final int days;
+  String place;
+  String image;
+  int days;
 
-  Place(this.name, this.image, this.days);
+  Place({this.place, this.image, this.days});
 }
